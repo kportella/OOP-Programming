@@ -8,12 +8,14 @@ namespace pooMensagem
         {
             Mensagem mensagem1, mensagem2;
             mensagem1 = new Mensagem();
-            mensagem1.TextoMensagem = "Olá Mundo";
-            mensagem1.exibirMensagem();
+            mensagem1.setTextoMensagem("Olá Mundo");
+            Console.WriteLine(mensagem1.getTextoMensagem());
+            //mensagem1.exibirMensagem();
+
 
 
             mensagem2 = new Mensagem();
-            mensagem2.TextoMensagem = "Segundo Objeto";
+            mensagem2.setTextoMensagem("Segundo Objeto");
             mensagem2.exibirMensagem();
             Console.ReadKey();
 
